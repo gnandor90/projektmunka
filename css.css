@@ -1,3 +1,8 @@
+body{
+    background-image: url(galéria/images.jpg);
+    background-size: cover;
+}
+
 header {
     background-image: url(galéria/10-eve-szallt-el-a-malev-2022_-53-of-62.jpg);
     background-size:cover;
@@ -8,14 +13,21 @@ header {
     background-repeat: repeat;
     background-position: center;
 }
+header>h1 {
+    background-color: ;
+}
 nav{
     display:inline-block;
     text-align: center;
 }
-nav>ul>li {
-    
+.kontener {
+    width: 60%;
+    margin: auto;
+    background-color:lightgrey;
 }
-
-nav>ul>li>a {
-
+.cimsor1a {
+    color: black 0.5;
+}
+.navbar-brand {
+    padding-left: 10px;
 }
