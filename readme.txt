@@ -4,4 +4,6 @@ https://web.archive.org/web/20110621033343/http://www.malev.hu/
 
 
 képek forrás:
-body háttér: instagram
+body háttér: https://welovebudapest.com/cikk/2024/09/23/szabadido-setarepules-budapest-budaors-madartavlat-epiteszet-honapja-2024-imagine/
+logó: https://www.aero-shop.hu/Malev-vezersik-hutomagnes
+header háttér: https://gogogo.hu/2012-februar-3-an-szallt-el-a-malev/
