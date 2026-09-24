@@ -1,0 +1,10 @@
+header {
+    background-image: url(galéria/10-eve-szallt-el-a-malev-2022_-53-of-62.jpg);
+    background-size:cover;
+    height:200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: repeat;
+    background-position: center;
+}
