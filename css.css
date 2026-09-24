@@ -8,3 +8,14 @@ header {
     background-repeat: repeat;
     background-position: center;
 }
+nav{
+    display:inline-block;
+    text-align: center;
+}
+nav>ul>li {
+    
+}
+
+nav>ul>li>a {
+
+}
