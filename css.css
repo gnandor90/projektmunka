@@ -13,15 +13,12 @@ header {
     background-repeat: repeat;
     background-position: center;
 }
-header>h1 {
-    background-color: ;
-}
 nav{
     display:inline-block;
     text-align: center;
 }
 .kontener {
-    width: 80%;
+    width: 75%;
     margin: auto;
     background-color:lightgrey;
 }
@@ -30,4 +27,7 @@ nav{
 }
 .navbar-brand {
     padding-left: 10px;
+}
+section {
+    padding: 20px;
 }
