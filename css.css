@@ -16,6 +16,7 @@ header {
 nav{
     display:inline-block;
     text-align: center;
+    box-shadow: 1px 1px 5px 0px;
 }
 .kontener {
     width: 75%;
@@ -30,4 +31,9 @@ nav{
 }
 section {
     padding: 20px;
+}
+iframe {
+    margin-left: 350px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px 0px;
 }
