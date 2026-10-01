@@ -24,4 +24,9 @@ Ez a rész majd a több mint százéves magyar légitársasági történetét  f
 ##
 ## Foglalás
 
-Ez a rész majd a foglalási részt, árakat és utasinformációkat fogja tartalmazni
+Ez a rész majd a foglalási részt, árakat és az utasinformációkat fogja tartalmazni
+
+##
+## Flotta
+
+Itt majd a wikipédiás és az archivált weboldal flotta rész keveréke lesz látható
