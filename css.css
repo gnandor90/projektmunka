@@ -43,7 +43,7 @@ footer{
     background-color: black;
 }
 .d-block {
-    margin-left: 390px;
+    margin-left: 400px;
     box-shadow: 1px 1px 5px 0px;
     border-radius: 10px;
 }
@@ -52,4 +52,9 @@ footer{
 }
 .carousel {
     margin-top: 20px;
+}
+.kep {
+    width: 550px;
+    text-align: center;
+    margin-left: 420px;
 }
