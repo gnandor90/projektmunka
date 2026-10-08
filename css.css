@@ -50,3 +50,6 @@ footer{
 .carousel-control-next, .carousel-control-prev {
     margin: 0 350px;
 }
+.carousel {
+    margin-top: 20px;
+}
