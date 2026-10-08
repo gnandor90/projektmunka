@@ -2,7 +2,7 @@
 
 ## Weboldal
 
-A projekt arról szól, hogy hogyan nézne ki a Malév hungarian airlines egykori légitársaság weboldala ha ma is létezne
+Ez a projektmunka arról szól, hogy hogyan nézne ki a Malév hungarian airlines egykori légitársaság weboldala ha ma is létezne
 
 
 ## Navbar
