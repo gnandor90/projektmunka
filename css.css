@@ -58,3 +58,6 @@ footer{
     text-align: center;
     margin-left: 420px;
 }
+.carousel-control-next {
+    margin-right: 350px;
+}
