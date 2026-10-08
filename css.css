@@ -37,3 +37,16 @@ iframe {
     border-radius: 10px;
     box-shadow: 5px 5px 10px 0px;
 }
+footer{
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+.d-block {
+    margin-left: 390px;
+    box-shadow: 1px 1px 5px 0px;
+    border-radius: 10px;
+}
+.carousel-control-next, .carousel-control-prev {
+    margin: 0 350px;
+}
