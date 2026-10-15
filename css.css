@@ -22,6 +22,7 @@ nav{
     width: 75%;
     margin: auto;
     background-color:lightgrey;
+
 }
 .cimsor1a {
     color: black 0.5;
@@ -78,8 +79,8 @@ footer{
     box-shadow: 5px 5px 10px 0px;
 }
 .kep3 {
-    width: 150px;
-    margin-right: 35px;
+    width: 175px;
+    margin: 0 35px 20px 0;
     box-shadow: 5px 5px 10px 0px;
 }
 .margó1 {
