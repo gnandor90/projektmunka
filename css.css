@@ -61,3 +61,8 @@ footer{
 .carousel-control-next {
     margin-right: 350px;
 }
+.kep1 {
+    max-width: 215px;
+    float: right;
+    margin-right: 35px;
+}

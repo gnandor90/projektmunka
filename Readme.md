@@ -4,6 +4,7 @@
 
 Ez a projektmunka arról szól, hogy hogyan nézne ki a Malév hungarian airlines egykori légitársaság weboldala ha ma is létezne
 
+Ajánlott felbontás: 1920x1080
 
 ## Navbar
 
