@@ -72,11 +72,21 @@ footer{
     margin-right: 35px;
     box-shadow: 5px 5px 10px 0px;
 }
+.kep1a {
+    width: 215px;
+    float: right;
+    margin-right: 35px;
+}
 .kep2 {
     width: 150px;
     float: right;
     margin-right: 35px;
     box-shadow: 5px 5px 10px 0px;
+}
+.kep2a {
+    width: 150px;
+    float: right;
+    margin-right: 35px;
 }
 .kep3 {
     width: 175px;
