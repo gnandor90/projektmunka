@@ -101,3 +101,11 @@ footer{
 .margó1 {
     margin-top: 25px;
 }
+.margó2 {
+    margin-top: 25px;
+    text-align: center;
+}
+.card-text>a {
+    color:black;
+    text-decoration: none;
+}
