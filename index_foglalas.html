@@ -58,11 +58,13 @@
                 </div>
                 <div class="mb-3">
                     <label for="jelszo" class="form-label">Jelszó:</label>
-                    <input type="password" class="form-control" id="jelszo" required autocomplete="current-password" maxlength="21">
+                    <input type="password" class="form-control" id="jelszo" required autocomplete="current-password"
+                        maxlength="21">
                 </div>
                 <div class="mb-3">
                     <label for="honnan" class="form-label">Honnan:</label><br>
-                    <select name="honnan" id="honnan"> <!-- view-source:https://web.archive.org/web/20120130153034/http://www.malev.hu/ -->
+                    <select name="honnan" id="honnan">
+                        <!-- view-source:https://web.archive.org/web/20120130153034/http://www.malev.hu/ -->
                         <optgroup label="Városok az Ön országában">
                             <option value="BUD" selected="selected" optiongroup="Városok az Ön országában">Budapest
                                 (BUD), Magyarország</option>
@@ -141,7 +143,8 @@
                             </option>
                             <option value="MCQ" optiongroup="Az összes város">Miskolc (MCQ), Magyarország</option>
                             <option value="YMQ" optiongroup="Az összes város">Montreal (YMQ), Kanada</option>
-                            <option value="MOW" optiongroup="Az összes város" disabled>Moszkva (MOW), Oroszország</option>
+                            <option value="MOW" optiongroup="Az összes város" disabled>Moszkva (MOW), Oroszország
+                            </option>
                             <option value="NYC" optiongroup="Az összes város">New York (NYC), Amerikai Egyesült
                                 államok</option>
                             <option value="ODS" optiongroup="Az összes város" disabled>Odessza (ODS), Ukrajna</option>
@@ -249,13 +252,15 @@
                                 Királyság</option>
                             <option value="TGM" optiongroup="Az összes város">Marosvásárhely (TGM),
                                 Románia</option>
-                            <option value="MIA" optiongroup="Az összes város" selected="selected">Miami (MIA), Amerikai Egyesült
+                            <option value="MIA" optiongroup="Az összes város" selected="selected">Miami (MIA), Amerikai
+                                Egyesült
                                 államok</option>
                             <option value="MIL" optiongroup="Az összes város">Milánó (MIL), Olaszország
                             </option>
                             <option value="MCQ" optiongroup="Az összes város">Miskolc (MCQ), Magyarország</option>
                             <option value="YMQ" optiongroup="Az összes város">Montreal (YMQ), Kanada</option>
-                            <option value="MOW" optiongroup="Az összes város" disabled>Moszkva (MOW), Oroszország</option>
+                            <option value="MOW" optiongroup="Az összes város" disabled>Moszkva (MOW), Oroszország
+                            </option>
                             <option value="NYC" optiongroup="Az összes város">New York (NYC), Amerikai Egyesült
                                 államok</option>
                             <option value="ODS" optiongroup="Az összes város" disabled>Odessza (ODS), Ukrajna</option>
@@ -302,7 +307,23 @@
                         </optgroup>
                     </select>
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <div class="mb-3">
+                    <label for="idopont" class="form-label">Indulás:</label><br>
+                    <input type="datetime-local" class="form-control" id="idopont" name="idopont" required value="indulas">
+                </div>
+                <div class="mb-3">
+                    <label for="adult" class="form-label">Felnőtt (18+):</label><br>
+                    <input type="number" class="form-control" id="adult" name="adult" required min="1" max="12">
+                </div>
+                <div class="mb-3">
+                    <label for="child" class="form-label">Kiskorú (6-17):</label><br>
+                    <input type="number" class="form-control" id="child" name="child" min="0" max="6">
+                </div>
+                <div class="mb-3">
+                    <input type="checkbox" class="form-check-input" id="biznisz" name="biznisz">
+                    <label for="biznisz" class="form-check-label">Csak business árak</label><br>
+                </div>
+                <button type="submit" class="btn btn-primary btn-disabled" disabled>Tovább a fizetéshez (karbantartás alatt)</button>
             </form>
 
         </section>
