@@ -51,284 +51,323 @@
         <section>
             <h1 class="margó1">Foglalás</h1>
             <hr>
-            <form>
-                <div class="mb-3">
-                    <label for="emailcim" class="form-label">E-mail-cím:</label>
-                    <input type="email" class="form-control" id="emailcim" required autocomplete="email">
-                </div>
-                <div class="mb-3">
-                    <label for="jelszo" class="form-label">Jelszó:</label>
-                    <input type="password" class="form-control" id="jelszo" required autocomplete="current-password"
-                        maxlength="21">
-                </div>
-                <div class="mb-3">
-                    <label for="honnan" class="form-label">Honnan:</label><br>
-                    <select name="honnan" id="honnan">
-                        <!-- view-source:https://web.archive.org/web/20120130153034/http://www.malev.hu/ -->
-                        <optgroup label="Városok az Ön országában">
-                            <option value="BUD" selected="selected" optiongroup="Városok az Ön országában">Budapest
-                                (BUD), Magyarország</option>
-                            <option value="DEB" optiongroup="Városok az Ön országában">Debrecen (DEB), Magyarország
-                            </option>
-                            <option value="QGY" optiongroup="Városok az Ön országában">Győr (QGY), Magyarország
-                            </option>
-                            <option value="MCQ" optiongroup="Városok az Ön országában">Miskolc (MCQ), Magyarország
-                            </option>
-                            <option value="QPJ" optiongroup="Városok az Ön országában">Pécs (QPJ),
-                                Magyarország</option>
-                            <option value="QZD" optiongroup="Városok az Ön országában">Szeged (QZD), Magyarország
-                            </option>
-                        </optgroup>
-                        <optgroup label="Az összes város">
-                            <option value="AMM" optiongroup="Az összes város" disabled>Ammán (AMM), Jordánia</option>
-                            <option value="AMS" optiongroup="Az összes város">Amszterdam (AMS), Hollandia</option>
-                            <option value="ATH" optiongroup="Az összes város">Athén (ATH),
-                                Görögország</option>
-                            <option value="BCN" optiongroup="Az összes város">Barcelona (BCN), Spanyolország
-                            </option>
-                            <option value="BEY" optiongroup="Az összes város" disabled>Bejrút (BEY), Libanon</option>
-                            <option value="BEG" optiongroup="Az összes város">Belgrád (BEG), Szerbia</option>
-                            <option value="BER" optiongroup="Az összes város">Berlin (BER), Németország
-                            </option>
-                            <option value="BOS" optiongroup="Az összes város">Boston (BOS), Amerikai Egyesült
-                                államok</option>
-                            <option value="BRU" optiongroup="Az összes város">Brüsszel (BRU), Belgium</option>
-                            <option value="BUD" optiongroup="Az összes város">Budapest (BUD), Magyarország</option>
-                            <option value="BUH" optiongroup="Az összes város">Bukarest (BUH), Románia</option>
-                            <option value="BOJ" optiongroup="Az összes város">Burgas (BOJ), Bulgária</option>
-                            <option value="CHI" optiongroup="Az összes város">Chicago (CHI), Amerikai Egyesült
-                                államok</option>
-                            <option value="CLE" optiongroup="Az összes város">Cleveland (CLE), Amerikai Egyesült
-                                államok</option>
-                            <option value="DFW" optiongroup="Az összes város">Dallas (DFW), Amerikai Egyesült
-                                államok</option>
-                            <option value="DAM" optiongroup="Az összes város" disabled>Damaszkusz (DAM)</option>
-                            <option value="DEB" optiongroup="Az összes város">Debrecen (DEB), Magyarország</option>
-                            <option value="DUB" optiongroup="Az összes város">Dublin (DUB), &#205;rország</option>
-                            <option value="DUS" optiongroup="Az összes város">Düsseldorf (DUS),
-                                Németország</option>
-                            <option value="EDI" optiongroup="Az összes város">Edinburgh (EDI), Egyesült
-                                Királyság</option>
-                            <option value="FRA" optiongroup="Az összes város">Frankfurt (FRA), Németország
-                            </option>
-                            <option value="GOT" optiongroup="Az összes város">Göteborg (GOT), Svédország
-                            </option>
-                            <option value="QGY" optiongroup="Az összes város">Győr (QGY), Magyarország</option>
-                            <option value="HAM" optiongroup="Az összes város">Hamburg (HAM), Németország
-                            </option>
-                            <option value="HEL" optiongroup="Az összes város">Helsinki (HEL), Finnország</option>
-                            <option value="HER" optiongroup="Az összes város">Heraklion (HER),
-                                Görögország</option>
-                            <option value="IST" optiongroup="Az összes város">Isztambul (IST),
-                                Törökország</option>
-                            <option value="KSC" optiongroup="Az összes város">Kassa (KSC), Szlovákia</option>
-                            <option value="IEV" optiongroup="Az összes város" disabled>Kijev (IEV), Ukrajna</option>
-                            <option value="KIV" optiongroup="Az összes város">Kisinyov (KIV)</option>
-                            <option value="CLJ" optiongroup="Az összes város">Kolozsvár (CLJ), Románia
-                            </option>
-                            <option value="CPH" optiongroup="Az összes város">Koppenhága (CPH), Dánia</option>
-                            <option value="CFU" optiongroup="Az összes város">Korfu (CFU)</option>
-                            <option value="LCA" optiongroup="Az összes város">Lárnaka (LCA), Ciprus</option>
-                            <option value="LON" optiongroup="Az összes város">London (LON), Egyesült
-                                Királyság</option>
-                            <option value="MAD" optiongroup="Az összes város">Madrid (MAD), Spanyolország</option>
-                            <option value="AGP" optiongroup="Az összes város">Malaga (AGP), Spanyolország</option>
-                            <option value="MAN" optiongroup="Az összes város">Manchester (MAN), Egyesült
-                                Királyság</option>
-                            <option value="TGM" optiongroup="Az összes város">Marosvásárhely (TGM),
-                                Románia</option>
-                            <option value="MIA" optiongroup="Az összes város">Miami (MIA), Amerikai Egyesült
-                                államok</option>
-                            <option value="MIL" optiongroup="Az összes város">Milánó (MIL), Olaszország
-                            </option>
-                            <option value="MCQ" optiongroup="Az összes város">Miskolc (MCQ), Magyarország</option>
-                            <option value="YMQ" optiongroup="Az összes város">Montreal (YMQ), Kanada</option>
-                            <option value="MOW" optiongroup="Az összes város" disabled>Moszkva (MOW), Oroszország
-                            </option>
-                            <option value="NYC" optiongroup="Az összes város">New York (NYC), Amerikai Egyesült
-                                államok</option>
-                            <option value="ODS" optiongroup="Az összes város" disabled>Odessza (ODS), Ukrajna</option>
-                            <option value="OSL" optiongroup="Az összes város">Oslo (OSL)</option>
-                            <option value="PAR" optiongroup="Az összes város">Párizs (PAR), Franciaország
-                            </option>
-                            <option value="QPJ" optiongroup="Az összes város">Pécs (QPJ), Magyarország
-                            </option>
-                            <option value="TGD" optiongroup="Az összes város">Podgorica (TGD), Montenegró</option>
-                            <option value="PRG" optiongroup="Az összes város">Prága (PRG), Cseh
-                                Köztársaság</option>
-                            <option value="PRN" optiongroup="Az összes város">Pristina (PRN), Koszovó</option>
-                            <option value="RHO" optiongroup="Az összes város">Rodosz (RHO), Görögország
-                            </option>
-                            <option value="ROM" optiongroup="Az összes város">Róma (ROM), Olaszország</option>
-                            <option value="SPU" optiongroup="Az összes város">Split (SPU), Horvátország
-                            </option>
-                            <option value="STO" optiongroup="Az összes város">Stockholm (STO), Svédország
-                            </option>
-                            <option value="STR" optiongroup="Az összes város">Stuttgart (STR), Németország
-                            </option>
-                            <option value="SKG" optiongroup="Az összes város">Szaloniki (SKG),
-                                Görögország</option>
-                            <option value="SJJ" optiongroup="Az összes város">Szarajevó (SJJ), Bosznia és
-                                Hercegovina</option>
-                            <option value="QZD" optiongroup="Az összes város">Szeged (QZD), Magyarország</option>
-                            <option value="LED" optiongroup="Az összes város" disabled>Szentpétervár (LED),
-                                Oroszország</option>
-                            <option value="SKP" optiongroup="Az összes város">Szkopje (SKP), Macedón
-                                Köztársaság</option>
-                            <option value="SOF" optiongroup="Az összes város">Szófia (SOF), Bulgária</option>
-                            <option value="TLV" optiongroup="Az összes város">Tel-Aviv (TLV), Izrael</option>
-                            <option value="TIA" optiongroup="Az összes város">Tirana (TIA), Albánia</option>
-                            <option value="YTO" optiongroup="Az összes város">Toronto (YTO), Kanada</option>
-                            <option value="VAR" optiongroup="Az összes város">Várna (VAR), Bulgária</option>
-                            <option value="WAW" optiongroup="Az összes város">Varsó (WAW), Lengyelország
-                            </option>
-                            <option value="VCE" optiongroup="Az összes város">Velence (VCE), Olaszország</option>
-                            <option value="ZAG" optiongroup="Az összes város">Zágráb (ZAG),
-                                Horvátország</option>
-                            <option value="ZTH" optiongroup="Az összes város">Zakintosz (ZTH),
-                                Görögország</option>
-                            <option value="ZRH" optiongroup="Az összes város">Zürich (ZRH), Svájc</option>
-                        </optgroup>
-                    </select>
-                </div>
-                <div class="mb-3">
-                    <label for="hova" class="form-label">Hova:</label><br>
-                    <select name="hova" id="hova">
-                        <optgroup label="Az összes város">
-                            <option value="AMM" optiongroup="Az összes város" disabled>Ammán (AMM), Jordánia</option>
-                            <option value="AMS" optiongroup="Az összes város">Amszterdam (AMS), Hollandia</option>
-                            <option value="ATH" optiongroup="Az összes város">Athén (ATH),
-                                Görögország</option>
-                            <option value="BCN" optiongroup="Az összes város">Barcelona (BCN), Spanyolország
-                            </option>
-                            <option value="BEY" optiongroup="Az összes város" disabled>Bejrút (BEY), Libanon</option>
-                            <option value="BEG" optiongroup="Az összes város">Belgrád (BEG), Szerbia</option>
-                            <option value="BER" optiongroup="Az összes város">Berlin (BER), Németország
-                            </option>
-                            <option value="BOS" optiongroup="Az összes város">Boston (BOS), Amerikai Egyesült
-                                államok</option>
-                            <option value="BRU" optiongroup="Az összes város">Brüsszel (BRU), Belgium</option>
-                            <option value="BUD" optiongroup="Az összes város">Budapest (BUD), Magyarország</option>
-                            <option value="BUH" optiongroup="Az összes város">Bukarest (BUH), Románia</option>
-                            <option value="BOJ" optiongroup="Az összes város">Burgas (BOJ), Bulgária</option>
-                            <option value="CHI" optiongroup="Az összes város">Chicago (CHI), Amerikai Egyesült
-                                államok</option>
-                            <option value="CLE" optiongroup="Az összes város">Cleveland (CLE), Amerikai Egyesült
-                                államok</option>
-                            <option value="DFW" optiongroup="Az összes város">Dallas (DFW), Amerikai Egyesült
-                                államok</option>
-                            <option value="DAM" optiongroup="Az összes város" disabled>Damaszkusz (DAM)</option>
-                            <option value="DEB" optiongroup="Az összes város">Debrecen (DEB), Magyarország</option>
-                            <option value="DUB" optiongroup="Az összes város">Dublin (DUB), &#205;rország</option>
-                            <option value="DUS" optiongroup="Az összes város">Düsseldorf (DUS),
-                                Németország</option>
-                            <option value="EDI" optiongroup="Az összes város">Edinburgh (EDI), Egyesült
-                                Királyság</option>
-                            <option value="FRA" optiongroup="Az összes város">Frankfurt (FRA), Németország
-                            </option>
-                            <option value="GOT" optiongroup="Az összes város">Göteborg (GOT), Svédország
-                            </option>
-                            <option value="QGY" optiongroup="Az összes város">Győr (QGY), Magyarország</option>
-                            <option value="HAM" optiongroup="Az összes város">Hamburg (HAM), Németország
-                            </option>
-                            <option value="HEL" optiongroup="Az összes város">Helsinki (HEL), Finnország</option>
-                            <option value="HER" optiongroup="Az összes város">Heraklion (HER),
-                                Görögország</option>
-                            <option value="IST" optiongroup="Az összes város">Isztambul (IST),
-                                Törökország</option>
-                            <option value="KSC" optiongroup="Az összes város">Kassa (KSC), Szlovákia</option>
-                            <option value="IEV" optiongroup="Az összes város" disabled>Kijev (IEV), Ukrajna</option>
-                            <option value="KIV" optiongroup="Az összes város">Kisinyov (KIV)</option>
-                            <option value="CLJ" optiongroup="Az összes város">Kolozsvár (CLJ), Románia
-                            </option>
-                            <option value="CPH" optiongroup="Az összes város">Koppenhága (CPH), Dánia</option>
-                            <option value="CFU" optiongroup="Az összes város">Korfu (CFU)</option>
-                            <option value="LCA" optiongroup="Az összes város">Lárnaka (LCA), Ciprus</option>
-                            <option value="LON" optiongroup="Az összes város">London (LON), Egyesült
-                                Királyság</option>
-                            <option value="MAD" optiongroup="Az összes város">Madrid (MAD), Spanyolország</option>
-                            <option value="AGP" optiongroup="Az összes város">Malaga (AGP), Spanyolország</option>
-                            <option value="MAN" optiongroup="Az összes város">Manchester (MAN), Egyesült
-                                Királyság</option>
-                            <option value="TGM" optiongroup="Az összes város">Marosvásárhely (TGM),
-                                Románia</option>
-                            <option value="MIA" optiongroup="Az összes város" selected="selected">Miami (MIA), Amerikai
-                                Egyesült
-                                államok</option>
-                            <option value="MIL" optiongroup="Az összes város">Milánó (MIL), Olaszország
-                            </option>
-                            <option value="MCQ" optiongroup="Az összes város">Miskolc (MCQ), Magyarország</option>
-                            <option value="YMQ" optiongroup="Az összes város">Montreal (YMQ), Kanada</option>
-                            <option value="MOW" optiongroup="Az összes város" disabled>Moszkva (MOW), Oroszország
-                            </option>
-                            <option value="NYC" optiongroup="Az összes város">New York (NYC), Amerikai Egyesült
-                                államok</option>
-                            <option value="ODS" optiongroup="Az összes város" disabled>Odessza (ODS), Ukrajna</option>
-                            <option value="OSL" optiongroup="Az összes város">Oslo (OSL)</option>
-                            <option value="PAR" optiongroup="Az összes város">Párizs (PAR), Franciaország
-                            </option>
-                            <option value="QPJ" optiongroup="Az összes város">Pécs (QPJ), Magyarország
-                            </option>
-                            <option value="TGD" optiongroup="Az összes város">Podgorica (TGD), Montenegró</option>
-                            <option value="PRG" optiongroup="Az összes város">Prága (PRG), Cseh
-                                Köztársaság</option>
-                            <option value="PRN" optiongroup="Az összes város">Pristina (PRN), Koszovó</option>
-                            <option value="RHO" optiongroup="Az összes város">Rodosz (RHO), Görögország
-                            </option>
-                            <option value="ROM" optiongroup="Az összes város">Róma (ROM), Olaszország</option>
-                            <option value="SPU" optiongroup="Az összes város">Split (SPU), Horvátország
-                            </option>
-                            <option value="STO" optiongroup="Az összes város">Stockholm (STO), Svédország
-                            </option>
-                            <option value="STR" optiongroup="Az összes város">Stuttgart (STR), Németország
-                            </option>
-                            <option value="SKG" optiongroup="Az összes város">Szaloniki (SKG),
-                                Görögország</option>
-                            <option value="SJJ" optiongroup="Az összes város">Szarajevó (SJJ), Bosznia és
-                                Hercegovina</option>
-                            <option value="QZD" optiongroup="Az összes város">Szeged (QZD), Magyarország</option>
-                            <option value="LED" optiongroup="Az összes város" disabled>Szentpétervár (LED),
-                                Oroszország</option>
-                            <option value="SKP" optiongroup="Az összes város">Szkopje (SKP), Macedón
-                                Köztársaság</option>
-                            <option value="SOF" optiongroup="Az összes város">Szófia (SOF), Bulgária</option>
-                            <option value="TLV" optiongroup="Az összes város">Tel-Aviv (TLV), Izrael</option>
-                            <option value="TIA" optiongroup="Az összes város">Tirana (TIA), Albánia</option>
-                            <option value="YTO" optiongroup="Az összes város">Toronto (YTO), Kanada</option>
-                            <option value="VAR" optiongroup="Az összes város">Várna (VAR), Bulgária</option>
-                            <option value="WAW" optiongroup="Az összes város">Varsó (WAW), Lengyelország
-                            </option>
-                            <option value="VCE" optiongroup="Az összes város">Velence (VCE), Olaszország</option>
-                            <option value="ZAG" optiongroup="Az összes város">Zágráb (ZAG),
-                                Horvátország</option>
-                            <option value="ZTH" optiongroup="Az összes város">Zakintosz (ZTH),
-                                Görögország</option>
-                            <option value="ZRH" optiongroup="Az összes város">Zürich (ZRH), Svájc</option>
-                        </optgroup>
-                    </select>
-                </div>
-                <div class="mb-3">
-                    <label for="idopont" class="form-label">Indulás:</label><br>
-                    <input type="datetime-local" class="form-control" id="idopont" name="idopont" required value="indulas">
-                </div>
-                <div class="mb-3">
-                    <label for="adult" class="form-label">Felnőtt (18+):</label><br>
-                    <input type="number" class="form-control" id="adult" name="adult" required min="1" max="12">
-                </div>
-                <div class="mb-3">
-                    <label for="child" class="form-label">Kiskorú (6-17):</label><br>
-                    <input type="number" class="form-control" id="child" name="child" min="0" max="6">
-                </div>
-                <div class="mb-3">
-                    <input type="checkbox" class="form-check-input" id="biznisz" name="biznisz">
-                    <label for="biznisz" class="form-check-label">Csak business árak</label><br>
-                </div>
-                <button type="submit" class="btn btn-primary btn-disabled" disabled>Tovább a fizetéshez (karbantartás alatt)</button>
-            </form>
-
+            <div id="urlapdiv">
+                <form>
+                    <div class="mb-3">
+                        <label for="emailcim" class="form-label">E-mail-cím:</label>
+                        <input type="email" class="form-control" id="emailcim" required autocomplete="email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="jelszo" class="form-label">Jelszó:</label>
+                        <input type="password" class="form-control" id="jelszo" required autocomplete="current-password"
+                            maxlength="21">
+                    </div>
+                    <div class="mb-3">
+                        <label for="honnan" class="form-label">Honnan:</label><br>
+                        <select name="honnan" id="honnan">
+                            <!-- view-source:https://web.archive.org/web/20120130153034/http://www.malev.hu/ -->
+                            <optgroup label="Városok az Ön országában">
+                                <option value="BUD" selected="selected" optiongroup="Városok az Ön országában">Budapest
+                                    (BUD), Magyarország</option>
+                                <option value="DEB" optiongroup="Városok az Ön országában">Debrecen (DEB), Magyarország
+                                </option>
+                                <option value="QGY" optiongroup="Városok az Ön országában">Győr (QGY), Magyarország
+                                </option>
+                                <option value="MCQ" optiongroup="Városok az Ön országában">Miskolc (MCQ), Magyarország
+                                </option>
+                                <option value="QPJ" optiongroup="Városok az Ön országában">Pécs (QPJ),
+                                    Magyarország</option>
+                                <option value="QZD" optiongroup="Városok az Ön országában">Szeged (QZD), Magyarország
+                                </option>
+                            </optgroup>
+                            <optgroup label="Az összes város">
+                                <option value="AMM" optiongroup="Az összes város" disabled>Ammán (AMM), Jordánia</option>
+                                <option value="AMS" optiongroup="Az összes város">Amszterdam (AMS), Hollandia</option>
+                                <option value="ATH" optiongroup="Az összes város">Athén (ATH),
+                                    Görögország</option>
+                                <option value="BCN" optiongroup="Az összes város">Barcelona (BCN), Spanyolország
+                                </option>
+                                <option value="BEY" optiongroup="Az összes város" disabled>Bejrút (BEY), Libanon</option>
+                                <option value="BEG" optiongroup="Az összes város">Belgrád (BEG), Szerbia</option>
+                                <option value="BER" optiongroup="Az összes város">Berlin (BER), Németország
+                                </option>
+                                <option value="BOS" optiongroup="Az összes város">Boston (BOS), Amerikai Egyesült
+                                    államok</option>
+                                <option value="BRU" optiongroup="Az összes város">Brüsszel (BRU), Belgium</option>
+                                <option value="BUD" optiongroup="Az összes város">Budapest (BUD), Magyarország</option>
+                                <option value="BUH" optiongroup="Az összes város">Bukarest (BUH), Románia</option>
+                                <option value="BOJ" optiongroup="Az összes város">Burgas (BOJ), Bulgária</option>
+                                <option value="CHI" optiongroup="Az összes város">Chicago (CHI), Amerikai Egyesült
+                                    államok</option>
+                                <option value="CLE" optiongroup="Az összes város">Cleveland (CLE), Amerikai Egyesült
+                                    államok</option>
+                                <option value="DFW" optiongroup="Az összes város">Dallas (DFW), Amerikai Egyesült
+                                    államok</option>
+                                <option value="DAM" optiongroup="Az összes város" disabled>Damaszkusz (DAM)</option>
+                                <option value="DEB" optiongroup="Az összes város">Debrecen (DEB), Magyarország</option>
+                                <option value="DUB" optiongroup="Az összes város">Dublin (DUB), &#205;rország</option>
+                                <option value="DUS" optiongroup="Az összes város">Düsseldorf (DUS),
+                                    Németország</option>
+                                <option value="EDI" optiongroup="Az összes város">Edinburgh (EDI), Egyesült
+                                    Királyság</option>
+                                <option value="FRA" optiongroup="Az összes város">Frankfurt (FRA), Németország
+                                </option>
+                                <option value="GOT" optiongroup="Az összes város">Göteborg (GOT), Svédország
+                                </option>
+                                <option value="QGY" optiongroup="Az összes város">Győr (QGY), Magyarország</option>
+                                <option value="HAM" optiongroup="Az összes város">Hamburg (HAM), Németország
+                                </option>
+                                <option value="HEL" optiongroup="Az összes város">Helsinki (HEL), Finnország</option>
+                                <option value="HER" optiongroup="Az összes város">Heraklion (HER),
+                                    Görögország</option>
+                                <option value="IST" optiongroup="Az összes város">Isztambul (IST),
+                                    Törökország</option>
+                                <option value="KSC" optiongroup="Az összes város">Kassa (KSC), Szlovákia</option>
+                                <option value="IEV" optiongroup="Az összes város" disabled>Kijev (IEV), Ukrajna</option>
+                                <option value="KIV" optiongroup="Az összes város">Kisinyov (KIV)</option>
+                                <option value="CLJ" optiongroup="Az összes város">Kolozsvár (CLJ), Románia
+                                </option>
+                                <option value="CPH" optiongroup="Az összes város">Koppenhága (CPH), Dánia</option>
+                                <option value="CFU" optiongroup="Az összes város">Korfu (CFU)</option>
+                                <option value="LCA" optiongroup="Az összes város">Lárnaka (LCA), Ciprus</option>
+                                <option value="LON" optiongroup="Az összes város">London (LON), Egyesült
+                                    Királyság</option>
+                                <option value="MAD" optiongroup="Az összes város">Madrid (MAD), Spanyolország</option>
+                                <option value="AGP" optiongroup="Az összes város">Malaga (AGP), Spanyolország</option>
+                                <option value="MAN" optiongroup="Az összes város">Manchester (MAN), Egyesült
+                                    Királyság</option>
+                                <option value="TGM" optiongroup="Az összes város">Marosvásárhely (TGM),
+                                    Románia</option>
+                                <option value="MIA" optiongroup="Az összes város">Miami (MIA), Amerikai Egyesült
+                                    államok</option>
+                                <option value="MIL" optiongroup="Az összes város">Milánó (MIL), Olaszország
+                                </option>
+                                <option value="MCQ" optiongroup="Az összes város">Miskolc (MCQ), Magyarország</option>
+                                <option value="YMQ" optiongroup="Az összes város">Montreal (YMQ), Kanada</option>
+                                <option value="MOW" optiongroup="Az összes város" disabled>Moszkva (MOW), Oroszország
+                                </option>
+                                <option value="NYC" optiongroup="Az összes város">New York (NYC), Amerikai Egyesült
+                                    államok</option>
+                                <option value="ODS" optiongroup="Az összes város" disabled>Odessza (ODS), Ukrajna</option>
+                                <option value="OSL" optiongroup="Az összes város">Oslo (OSL)</option>
+                                <option value="PAR" optiongroup="Az összes város">Párizs (PAR), Franciaország
+                                </option>
+                                <option value="QPJ" optiongroup="Az összes város">Pécs (QPJ), Magyarország
+                                </option>
+                                <option value="TGD" optiongroup="Az összes város">Podgorica (TGD), Montenegró</option>
+                                <option value="PRG" optiongroup="Az összes város">Prága (PRG), Cseh
+                                    Köztársaság</option>
+                                <option value="PRN" optiongroup="Az összes város">Pristina (PRN), Koszovó</option>
+                                <option value="RHO" optiongroup="Az összes város">Rodosz (RHO), Görögország
+                                </option>
+                                <option value="ROM" optiongroup="Az összes város">Róma (ROM), Olaszország</option>
+                                <option value="SPU" optiongroup="Az összes város">Split (SPU), Horvátország
+                                </option>
+                                <option value="STO" optiongroup="Az összes város">Stockholm (STO), Svédország
+                                </option>
+                                <option value="STR" optiongroup="Az összes város">Stuttgart (STR), Németország
+                                </option>
+                                <option value="SKG" optiongroup="Az összes város">Szaloniki (SKG),
+                                    Görögország</option>
+                                <option value="SJJ" optiongroup="Az összes város">Szarajevó (SJJ), Bosznia és
+                                    Hercegovina</option>
+                                <option value="QZD" optiongroup="Az összes város">Szeged (QZD), Magyarország</option>
+                                <option value="LED" optiongroup="Az összes város" disabled>Szentpétervár (LED),
+                                    Oroszország</option>
+                                <option value="SKP" optiongroup="Az összes város">Szkopje (SKP), Macedón
+                                    Köztársaság</option>
+                                <option value="SOF" optiongroup="Az összes város">Szófia (SOF), Bulgária</option>
+                                <option value="TLV" optiongroup="Az összes város">Tel-Aviv (TLV), Izrael</option>
+                                <option value="TIA" optiongroup="Az összes város">Tirana (TIA), Albánia</option>
+                                <option value="YTO" optiongroup="Az összes város">Toronto (YTO), Kanada</option>
+                                <option value="VAR" optiongroup="Az összes város">Várna (VAR), Bulgária</option>
+                                <option value="WAW" optiongroup="Az összes város">Varsó (WAW), Lengyelország
+                                </option>
+                                <option value="VCE" optiongroup="Az összes város">Velence (VCE), Olaszország</option>
+                                <option value="ZAG" optiongroup="Az összes város">Zágráb (ZAG),
+                                    Horvátország</option>
+                                <option value="ZTH" optiongroup="Az összes város">Zakintosz (ZTH),
+                                    Görögország</option>
+                                <option value="ZRH" optiongroup="Az összes város">Zürich (ZRH), Svájc</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="hova" class="form-label">Hova:</label><br>
+                        <select name="hova" id="hova">
+                            <optgroup label="Az összes város">
+                                <option value="AMM" optiongroup="Az összes város" disabled>Ammán (AMM), Jordánia</option>
+                                <option value="AMS" optiongroup="Az összes város">Amszterdam (AMS), Hollandia</option>
+                                <option value="ATH" optiongroup="Az összes város">Athén (ATH),
+                                    Görögország</option>
+                                <option value="BCN" optiongroup="Az összes város">Barcelona (BCN), Spanyolország
+                                </option>
+                                <option value="BEY" optiongroup="Az összes város" disabled>Bejrút (BEY), Libanon</option>
+                                <option value="BEG" optiongroup="Az összes város">Belgrád (BEG), Szerbia</option>
+                                <option value="BER" optiongroup="Az összes város">Berlin (BER), Németország
+                                </option>
+                                <option value="BOS" optiongroup="Az összes város">Boston (BOS), Amerikai Egyesült
+                                    államok</option>
+                                <option value="BRU" optiongroup="Az összes város">Brüsszel (BRU), Belgium</option>
+                                <option value="BUD" optiongroup="Az összes város">Budapest (BUD), Magyarország</option>
+                                <option value="BUH" optiongroup="Az összes város">Bukarest (BUH), Románia</option>
+                                <option value="BOJ" optiongroup="Az összes város">Burgas (BOJ), Bulgária</option>
+                                <option value="CHI" optiongroup="Az összes város">Chicago (CHI), Amerikai Egyesült
+                                    államok</option>
+                                <option value="CLE" optiongroup="Az összes város">Cleveland (CLE), Amerikai Egyesült
+                                    államok</option>
+                                <option value="DFW" optiongroup="Az összes város">Dallas (DFW), Amerikai Egyesült
+                                    államok</option>
+                                <option value="DAM" optiongroup="Az összes város" disabled>Damaszkusz (DAM)</option>
+                                <option value="DEB" optiongroup="Az összes város">Debrecen (DEB), Magyarország</option>
+                                <option value="DUB" optiongroup="Az összes város">Dublin (DUB), &#205;rország</option>
+                                <option value="DUS" optiongroup="Az összes város">Düsseldorf (DUS),
+                                    Németország</option>
+                                <option value="EDI" optiongroup="Az összes város">Edinburgh (EDI), Egyesült
+                                    Királyság</option>
+                                <option value="FRA" optiongroup="Az összes város">Frankfurt (FRA), Németország
+                                </option>
+                                <option value="GOT" optiongroup="Az összes város">Göteborg (GOT), Svédország
+                                </option>
+                                <option value="QGY" optiongroup="Az összes város">Győr (QGY), Magyarország</option>
+                                <option value="HAM" optiongroup="Az összes város">Hamburg (HAM), Németország
+                                </option>
+                                <option value="HEL" optiongroup="Az összes város">Helsinki (HEL), Finnország</option>
+                                <option value="HER" optiongroup="Az összes város">Heraklion (HER),
+                                    Görögország</option>
+                                <option value="IST" optiongroup="Az összes város">Isztambul (IST),
+                                    Törökország</option>
+                                <option value="KSC" optiongroup="Az összes város">Kassa (KSC), Szlovákia</option>
+                                <option value="IEV" optiongroup="Az összes város" disabled>Kijev (IEV), Ukrajna</option>
+                                <option value="KIV" optiongroup="Az összes város">Kisinyov (KIV)</option>
+                                <option value="CLJ" optiongroup="Az összes város">Kolozsvár (CLJ), Románia
+                                </option>
+                                <option value="CPH" optiongroup="Az összes város">Koppenhága (CPH), Dánia</option>
+                                <option value="CFU" optiongroup="Az összes város">Korfu (CFU)</option>
+                                <option value="LCA" optiongroup="Az összes város">Lárnaka (LCA), Ciprus</option>
+                                <option value="LON" optiongroup="Az összes város">London (LON), Egyesült
+                                    Királyság</option>
+                                <option value="MAD" optiongroup="Az összes város">Madrid (MAD), Spanyolország</option>
+                                <option value="AGP" optiongroup="Az összes város">Malaga (AGP), Spanyolország</option>
+                                <option value="MAN" optiongroup="Az összes város">Manchester (MAN), Egyesült
+                                    Királyság</option>
+                                <option value="TGM" optiongroup="Az összes város">Marosvásárhely (TGM),
+                                    Románia</option>
+                                <option value="MIA" optiongroup="Az összes város" selected="selected">Miami (MIA), Amerikai
+                                    Egyesült
+                                    államok</option>
+                                <option value="MIL" optiongroup="Az összes város">Milánó (MIL), Olaszország
+                                </option>
+                                <option value="MCQ" optiongroup="Az összes város">Miskolc (MCQ), Magyarország</option>
+                                <option value="YMQ" optiongroup="Az összes város">Montreal (YMQ), Kanada</option>
+                                <option value="MOW" optiongroup="Az összes város" disabled>Moszkva (MOW), Oroszország
+                                </option>
+                                <option value="NYC" optiongroup="Az összes város">New York (NYC), Amerikai Egyesült
+                                    államok</option>
+                                <option value="ODS" optiongroup="Az összes város" disabled>Odessza (ODS), Ukrajna</option>
+                                <option value="OSL" optiongroup="Az összes város">Oslo (OSL)</option>
+                                <option value="PAR" optiongroup="Az összes város">Párizs (PAR), Franciaország
+                                </option>
+                                <option value="QPJ" optiongroup="Az összes város">Pécs (QPJ), Magyarország
+                                </option>
+                                <option value="TGD" optiongroup="Az összes város">Podgorica (TGD), Montenegró</option>
+                                <option value="PRG" optiongroup="Az összes város">Prága (PRG), Cseh
+                                    Köztársaság</option>
+                                <option value="PRN" optiongroup="Az összes város">Pristina (PRN), Koszovó</option>
+                                <option value="RHO" optiongroup="Az összes város">Rodosz (RHO), Görögország
+                                </option>
+                                <option value="ROM" optiongroup="Az összes város">Róma (ROM), Olaszország</option>
+                                <option value="SPU" optiongroup="Az összes város">Split (SPU), Horvátország
+                                </option>
+                                <option value="STO" optiongroup="Az összes város">Stockholm (STO), Svédország
+                                </option>
+                                <option value="STR" optiongroup="Az összes város">Stuttgart (STR), Németország
+                                </option>
+                                <option value="SKG" optiongroup="Az összes város">Szaloniki (SKG),
+                                    Görögország</option>
+                                <option value="SJJ" optiongroup="Az összes város">Szarajevó (SJJ), Bosznia és
+                                    Hercegovina</option>
+                                <option value="QZD" optiongroup="Az összes város">Szeged (QZD), Magyarország</option>
+                                <option value="LED" optiongroup="Az összes város" disabled>Szentpétervár (LED),
+                                    Oroszország</option>
+                                <option value="SKP" optiongroup="Az összes város">Szkopje (SKP), Macedón
+                                    Köztársaság</option>
+                                <option value="SOF" optiongroup="Az összes város">Szófia (SOF), Bulgária</option>
+                                <option value="TLV" optiongroup="Az összes város">Tel-Aviv (TLV), Izrael</option>
+                                <option value="TIA" optiongroup="Az összes város">Tirana (TIA), Albánia</option>
+                                <option value="YTO" optiongroup="Az összes város">Toronto (YTO), Kanada</option>
+                                <option value="VAR" optiongroup="Az összes város">Várna (VAR), Bulgária</option>
+                                <option value="WAW" optiongroup="Az összes város">Varsó (WAW), Lengyelország
+                                </option>
+                                <option value="VCE" optiongroup="Az összes város">Velence (VCE), Olaszország</option>
+                                <option value="ZAG" optiongroup="Az összes város">Zágráb (ZAG),
+                                    Horvátország</option>
+                                <option value="ZTH" optiongroup="Az összes város">Zakintosz (ZTH),
+                                    Görögország</option>
+                                <option value="ZRH" optiongroup="Az összes város">Zürich (ZRH), Svájc</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="idopont" class="form-label">Indulás:</label><br>
+                        <input type="datetime-local" class="form-control" id="idopont" name="idopont" required
+                            value="indulas">
+                    </div>
+                    <div class="mb-3">
+                        <label for="adult" class="form-label">Felnőtt (18+):</label><br>
+                        <input type="number" class="form-control" id="adult" name="adult" required min="1" max="12">
+                    </div>
+                    <div class="mb-3">
+                        <label for="child" class="form-label">Kiskorú (6-17):</label><br>
+                        <input type="number" class="form-control" id="child" name="child" min="0" max="6">
+                    </div>
+                    <div class="mb-3">
+                        <input type="checkbox" class="form-check-input" id="biznisz" name="biznisz">
+                        <label for="biznisz" class="form-check-label">Csak business árak</label><br>
+                    </div>
+                    <button type="submit" class="btn btn-primary" onclick="tovabb1()">Tovább a fizetéshez</button>
+                </form>
+            </div>
+            <div id="bankkartyadiv" style="display: none;">
+                <form>
+                    <div class="mb-3">
+                        <label for="kartyaszam" class="form-label">Kártyaszám:</label><br>
+                        <input type="" class="form-control" id="kartyaszam" name="kartyaszam" required pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}" placeholder="1234-2345-3456-4567" autocomplete="cc-number">
+                    </div>
+                    <div class="mb-3">
+                        <label for="kartyaszam" class="form-label">Bankkártya lejárati dátum:</label><br>
+                        <input type="number" class="form-control" id="kartyaszam" name="kartyaszam" required pattern="[0-9]{2}-[0-9]{2}" placeholder="11/26" autocomplete="cc-exp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="ccv" class="form-label">CCV:</label><br>
+                        <input type="number" class="form-control" id="ccv" name="ccv" required pattern="[0-9]{3}"
+                            placeholder="007" autocomplete="cc-csc">
+                    </div>
+                    <div class="mb-3">
+                        <label for="kartyanev" class="form-label">Teljes név:</label><br>
+                        <input type="text" class="form-control" id="kartyanev" name="kartyanev" required autocomplete="cc-name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="billingaddress" class="form-label">Számlázási cím</label><br>
+                        <input type="number" class="form-control" id="billingaddress" name="billingaddress" required autocomplete="billing">
+                    </div>
+                        <button type="submit" class="btn btn-primary" onclick="vissza()">Vissza</button>
+                        <button type="submit" class="btn btn-primary" onclick="tovabb2()">Fizetés</button>
+                </form>
+            </div>
         </section>
     </div>
     <footer>© Malév 2026</footer>
+    <script>
+        function tovabb1() {
+            document.getElementById("urlapdiv").style.display = "none";
+            document.getElementById("bankkartyadiv").style.display = "block";
+        }
+        function vissza() {
+            document.getElementById("urlapdiv").style.display = "block";
+            document.getElementById("bankkartyadiv").style.display = "none";
+        }
+    </script>
 </body>
 
 </html>
