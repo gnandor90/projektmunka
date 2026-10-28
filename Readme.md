@@ -27,7 +27,7 @@ Ez a rész a [Malév 2012.01.30-ai archivált weboldal átírt kezdő szövegét
 ##
 ## Foglalás
 
-Ez a rész tartalmazza a foglalás űrlap részét, ahol az eleje tartalmazza a regisztrációt, az útvonalakat (amit úgy csináltam meg hogy kimásoltam az archivált oldal option választékát és felújítottam, minkét választós opció ugyanúgy az eredeti kód indulási hely kódjából származik) és az életkortól különböző utasok számát. A tovább gomb elvisz egy olyan részre ahol részletként úgy csináltam meg mintha lehetne fizetni.
+Ez a rész tartalmazza a jegyek árát, alatta a foglalás űrlap részét, ahol az eleje tartalmazza a regisztrációt, az útvonalakat (amit úgy csináltam meg hogy kimásoltam az archivált oldal option választékát és felújítottam, minkét választós opció ugyanúgy az eredeti kód indulási hely kódjából származik) és az életkortól különböző utasok számát. A tovább gomb elvisz egy olyan részre ahol részletként úgy csináltam meg mintha lehetne fizetni.
 
 ![Így nézett ki az eredeti kód](galéria/Képernyőkép%202026-10-24%20232653.png)<br>
 *Így nézett ki az eredeti kód az lap select részénél*
@@ -39,3 +39,8 @@ Ez a rész tartalmazza a foglalás űrlap részét, ahol az eleje tartalmazza a 
 Ez a rész tartalmazza a légitársaság flottáját 18-20 évvel ezelöttről (olyat is tartalmaz, amit a légitársaság megszűnése előtt is kivont a szolgálatból, pl. a Boeing 767-es repülőgép). Az első rész tartalmazza az "aktív" repülőgépek galériáját olyan szöveggel ahol odamegy a lejjebb lévő leírásához. A repülőgépek leírása tartalmaz egy rövid leírást, műszaki adatokat és képet a külsejéről és a típus belsejéről. A legalján van egy nosztalgiaflotta rész abban a formátumban mint az aktív repülőgép leírás, A nosztalgiaflotta tartalmazza a HA-LIX lajstromjelű 1949-es repülőgépet és a HA-LCA lajstromjelű 1973-as repülőgépet.
 
 (ui: csak az "aktív" repülőgépek műszaki leírásának adatai összegyűjtésénél használtam mesterséges intelligenciát)
+
+##
+## Malév Air Tours
+
+Ez a rész tartalmazza [az archivált weboldal Air Tours részének szövegét](https://web.archive.org/web/20120130214902/http://www.malev.hu/ceginformaciok/malev-airtours).
