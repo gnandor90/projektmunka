@@ -72,12 +72,11 @@
                 <form>
                     <div class="mb-3">
                         <label for="emailcim" class="form-label">E-mail-cím:</label>
-                        <input type="email" class="form-control" id="emailcim" required autocomplete="email">
+                        <input type="email" class="form-control" id="emailcim" required autocomplete="email" inputmode="email">
                     </div>
                     <div class="mb-3">
                         <label for="jelszo" class="form-label">Jelszó:</label>
-                        <input type="password" class="form-control" id="jelszo" required autocomplete="current-password"
-                            maxlength="21">
+                        <input type="password" class="form-control" id="jelszo" required autocomplete="current-password" maxlength="21">
                     </div>
                     <div class="mb-3">
                         <label for="honnan" class="form-label">Honnan:</label><br>
@@ -355,7 +354,7 @@
                     </div>
                     <div class="mb-3">
                         <label for="ccv" class="form-label">CCV:</label><br>
-                        <input type="number" class="form-control" id="ccv" name="ccv" required pattern="[0-9]{3}" placeholder="007" autocomplete="cc-csc">
+                        <input type="text" class="form-control" id="ccv" name="ccv" required pattern="[0-9]{3}" placeholder="007" autocomplete="cc-csc">
                     </div>
                     <div class="mb-3">
                         <label for="kartyanev" class="form-label">Teljes név:</label><br>
@@ -363,7 +362,7 @@
                     </div>
                     <div class="mb-3">
                         <label for="billingaddress" class="form-label">Számlázási cím</label><br>
-                        <input type="number" class="form-control" id="billingaddress" name="billingaddress" required autocomplete="billing">
+                        <input type="text" class="form-control" id="billingaddress" name="billingaddress" required autocomplete="billing">
                     </div>
                         <button type="submit" class="btn btn-primary" onclick="vissza()">Vissza</button>
                         <button type="submit" class="btn btn-primary disabled" disabled onclick="tovabb2()">Fizetés</button>
