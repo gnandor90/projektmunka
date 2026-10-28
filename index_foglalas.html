@@ -346,11 +346,11 @@
                 <form>
                     <div class="mb-3">
                         <label for="kartyaszam" class="form-label">Kártyaszám:</label><br>
-                        <input type="number" class="form-control" id="kartyaszam" name="kartyaszam" required pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}" placeholder="1234-2345-3456-4567" autocomplete="cc-number">
+                        <input type="number" class="form-control" id="kartyaszam" name="kartyaszam" required autocomplete="cc-number">
                     </div>
                     <div class="mb-3">
                         <label for="kartyalejarat" class="form-label">Bankkártya lejárati dátum:</label><br>
-                        <input type="number" class="form-control" id="kartyalejarat" name="kartyalejarat" required pattern="[0-9]{2}-[0-9]{2}" placeholder="11/26" autocomplete="cc-exp">
+                        <input type="text" class="form-control" id="kartyalejarat" name="kartyalejarat" required pattern="[0-9]{2}-[0-9]{2}" placeholder="11/26" autocomplete="cc-exp">
                     </div>
                     <div class="mb-3">
                         <label for="ccv" class="form-label">CCV:</label><br>
