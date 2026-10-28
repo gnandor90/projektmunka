@@ -310,8 +310,7 @@
                     </div>
                     <div class="mb-3">
                         <label for="idopont" class="form-label">Indulás:</label><br>
-                        <input type="datetime-local" class="form-control" id="idopont" name="idopont" required
-                            value="indulas">
+                        <input type="datetime-local" class="form-control" id="idopont" name="idopont" required>
                     </div>
                     <div class="mb-3">
                         <label for="adult" class="form-label">Felnőtt (18+):</label><br>
@@ -332,16 +331,15 @@
                 <form>
                     <div class="mb-3">
                         <label for="kartyaszam" class="form-label">Kártyaszám:</label><br>
-                        <input type="" class="form-control" id="kartyaszam" name="kartyaszam" required pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}" placeholder="1234-2345-3456-4567" autocomplete="cc-number">
+                        <input type="number" class="form-control" id="kartyaszam" name="kartyaszam" required pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}" placeholder="1234-2345-3456-4567" autocomplete="cc-number">
                     </div>
                     <div class="mb-3">
-                        <label for="kartyaszam" class="form-label">Bankkártya lejárati dátum:</label><br>
-                        <input type="number" class="form-control" id="kartyaszam" name="kartyaszam" required pattern="[0-9]{2}-[0-9]{2}" placeholder="11/26" autocomplete="cc-exp">
+                        <label for="kartyalejarat" class="form-label">Bankkártya lejárati dátum:</label><br>
+                        <input type="number" class="form-control" id="kartyalejarat" name="kartyalejarat" required pattern="[0-9]{2}-[0-9]{2}" placeholder="11/26" autocomplete="cc-exp">
                     </div>
                     <div class="mb-3">
                         <label for="ccv" class="form-label">CCV:</label><br>
-                        <input type="number" class="form-control" id="ccv" name="ccv" required pattern="[0-9]{3}"
-                            placeholder="007" autocomplete="cc-csc">
+                        <input type="number" class="form-control" id="ccv" name="ccv" required pattern="[0-9]{3}" placeholder="007" autocomplete="cc-csc">
                     </div>
                     <div class="mb-3">
                         <label for="kartyanev" class="form-label">Teljes név:</label><br>
@@ -352,7 +350,7 @@
                         <input type="number" class="form-control" id="billingaddress" name="billingaddress" required autocomplete="billing">
                     </div>
                         <button type="submit" class="btn btn-primary" onclick="vissza()">Vissza</button>
-                        <button type="submit" class="btn btn-primary" onclick="tovabb2()">Fizetés</button>
+                        <button type="submit" class="btn btn-primary disabled" disabled onclick="tovabb2()">Fizetés</button>
                 </form>
             </div>
         </section>
