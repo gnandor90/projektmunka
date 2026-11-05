@@ -53,8 +53,10 @@
             <hr>
             <table class="table table-striped">
                 <thead>
-                    <th>Jegy típusa</th>
-                    <th>Ára</th>
+                    <tr>
+                        <th>Jegy típusa</th>
+                        <th>Ára</th>
+                    </tr>
                 </thead>
                 <tbody>
                     <tr>
@@ -120,7 +122,7 @@
                                     államok</option>
                                 <option value="DAM" optiongroup="Az összes város" disabled>Damaszkusz (DAM)</option>
                                 <option value="DEB" optiongroup="Az összes város">Debrecen (DEB), Magyarország</option>
-                                <option value="DUB" optiongroup="Az összes város">Dublin (DUB), &#205;rország</option>
+                                <option value="DUB" optiongroup="Az összes város">Dublin (DUB), Írország</option>
                                 <option value="DUS" optiongroup="Az összes város">Düsseldorf (DUS),
                                     Németország</option>
                                 <option value="EDI" optiongroup="Az összes város">Edinburgh (EDI), Egyesült
@@ -235,7 +237,7 @@
                                     államok</option>
                                 <option value="DAM" optiongroup="Az összes város" disabled>Damaszkusz (DAM)</option>
                                 <option value="DEB" optiongroup="Az összes város">Debrecen (DEB), Magyarország</option>
-                                <option value="DUB" optiongroup="Az összes város">Dublin (DUB), &#205;rország</option>
+                                <option value="DUB" optiongroup="Az összes város">Dublin (DUB), Írország</option>
                                 <option value="DUS" optiongroup="Az összes város">Düsseldorf (DUS),
                                     Németország</option>
                                 <option value="EDI" optiongroup="Az összes város">Edinburgh (EDI), Egyesült
@@ -346,11 +348,11 @@
                 <form>
                     <div class="mb-3">
                         <label for="kartyaszam" class="form-label">Kártyaszám:</label><br>
-                        <input type="number" class="form-control" id="kartyaszam" name="kartyaszam" required autocomplete="cc-number">
+                        <input type="text" class="form-control" id="kartyaszam" name="kartyaszam" required autocomplete="cc-number" inputmode="numeric">
                     </div>
                     <div class="mb-3">
                         <label for="kartyalejarat" class="form-label">Bankkártya lejárati dátum:</label><br>
-                        <input type="text" class="form-control" id="kartyalejarat" name="kartyalejarat" required pattern="[0-9]{2}-[0-9]{2}" placeholder="11/26" autocomplete="cc-exp">
+                        <input type="text" class="form-control" id="kartyalejarat" name="kartyalejarat" required pattern="[0-9]{2}/[0-9]{2}" placeholder="11/26" autocomplete="cc-exp">
                     </div>
                     <div class="mb-3">
                         <label for="ccv" class="form-label">CCV:</label><br>
